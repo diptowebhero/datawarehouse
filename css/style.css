@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   padding: 0px 40px;
 }
+
 /* nav css start */
 nav {
   display: flex;
@@ -57,9 +58,159 @@ nav li a {
   display: none;
 }
 /* nav css end */
+/* banner css start */
+.banner {
+  height: calc(100vh - 80px);
+  background: url("../images/banner.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.banner_text h1 {
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 700;
+  color: rgba(33, 35, 83, 1);
+  max-width: 645px;
+}
+.banner_text {
+  width: 100%;
+}
+.banner_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(75, 93, 104, 1);
+  max-width: 500px;
+  margin: 40px 0px;
+}
+.btn_banner {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  background: rgba(156, 105, 226, 1);
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* =====banner css end===== */
+
+/* ====about css start===== */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
+  background: rgba(240, 99, 184, 0.15);
+  margin-top: 70px;
+  border-radius: 50px;
+}
+.about_left {
+  max-width: 477px;
+  height: 504px;
+}
+.about_left img {
+  width: 100%;
+  height: 100%;
+}
+.about_right h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: rgba(33, 35, 83, 1);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about_right,
+.title p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  color: rgba(75, 93, 104, 1);
+}
+/* ====about css end==== */
+/* feature css start */
+#feature {
+  margin-top: 70px;
+}
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-size: 30px;
+  line-height: 14px;
+  color: rgba(33, 35, 83, 1);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.title p {
+  max-width: 500px;
+  margin: 0px auto;
+}
+.feature_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card {
+  max-width: 442px;
+  height: 358px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/features/features-bg1.png);
+  background-repeat: no-repeat;
+}
+.card-2{
+  background: url(../images/features/features-bg2.png);
+  background-repeat: no-repeat;
+}
+.card-3{
+  background: url(../images/features/features-bg3.png);
+  background-repeat: no-repeat;
+}
+.card-4{
+  background: url(../images/features/features-bg4.png);
+  background-repeat: no-repeat;
+}
+.card-image {
+  max-width: 232px;
+  height: 211px;
+}
+.card-image img {
+  transform: translateX(-41px);
+}
+.card-text h3 {
+  font-size: 18px;
+  color: rgba(33, 35, 83, 1);
+  font-weight: 400;
+  line-height: 31px;
+}
+.card-text p {
+  color: rgba(75, 93, 104, 1);
+  padding: 15px 0px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.btn-feature {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(33, 35, 83, 1);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* feature css end */
 /* responsive for small device */
 @media (max-width: 940px) {
-  .btn-nav{
+  .btn-nav {
     display: none;
   }
   .toggle-menu-btn {
@@ -82,5 +233,65 @@ nav li a {
   .navigation li {
     display: block;
     padding: 20px 0px 20px 50px;
+  }
+  /* nav css end */
+  .banner {
+    background: none;
+  }
+  /* banner css end*/
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 20px;
+  }
+  .feature_container{
+    grid-template-columns: 1fr;
+  }
+  .about_right {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 526px) {
+  .banner_text h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .card{
+    flex-direction: column;
+    padding: 5px 0px !important;
+  }
+  .card-image img{
+    transform: translateY(0)
+  }
+  .card-text{
+    text-align: center;
+  }
+  .card-text p{
+    margin-right: 0px;
+    padding: 5px 15px;
+  }
+}
+@media (max-width: 376px) {
+  .banner_text h1 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .banner_text p {
+    margin: 19px 0px;
+  }
+  .about_right h2 {
+    font-size: 29px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+  .about_right p {
+    line-height: 22px;
+  }
+  .about {
+    padding: 5px 0px;
+  }
+  .about {
+    gap: 7px;
   }
 }
