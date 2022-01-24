@@ -339,6 +339,25 @@ address p {
   font-size: 19px;
   margin-top: 30px;
 }
+.free_trail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  padding-bottom: 33px;
+  flex-wrap: nowrap;
+}
+.free_trail h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  color: rgba(33, 35, 83, 1);
+}
+.free_trail p {
+  line-height: 28px;
+  color: rgba(75, 93, 104, 1);
+  font-size: 16px;
+}
 /* footer css end */
 /* responsive for small device */
 @media (max-width: 940px) {
@@ -430,7 +449,14 @@ address p {
   }
   .copyright {
     flex-direction: column;
-}
+    text-align: center;
+  }
+  .free_trail {
+    flex-direction: column;
+  }
+  .free_trail h3 {
+    font-size: 32px;
+  }
 }
 @media (max-width: 376px) {
   .banner_text h1 {
@@ -454,5 +480,4 @@ address p {
   .about {
     gap: 7px;
   }
-  
 }
