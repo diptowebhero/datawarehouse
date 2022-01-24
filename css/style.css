@@ -265,7 +265,7 @@ nav li a {
 }
 /* testimonial css end */
 /* footer css start */
-#help{
+#help {
   margin-top: 100px;
   border-top: 2px solid rgb(201 184 225);
 }
@@ -287,18 +287,18 @@ address p {
   margin: 20px 0px;
   font-size: 15px;
 }
-.col h5{
+.col h5 {
   padding-bottom: 20px;
   color: rgba(33, 35, 83, 1);
   font-weight: 400;
   font-size: 16px;
 }
-.col-title{
+.col-title {
   margin-bottom: 30px;
   font-weight: 600 !important;
 }
-.icon{
-  display:flex;
+.icon {
+  display: flex;
 }
 .icon i {
   background: #cbc6c6;
@@ -311,6 +311,33 @@ address p {
   justify-content: center;
   margin-right: 10px;
   cursor: pointer;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.copyright p {
+  margin-top: 25px;
+  max-width: 331px;
+  color: rgba(33, 35, 83, 1);
+  line-height: 27px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.copyright i {
+  width: 40px;
+  height: 40px;
+  background: rgb(219, 199, 247, 1);
+  border-radius: 50%;
+  display: flex;
+  color: rgba(156, 105, 226, 1);
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 30px;
 }
 /* footer css end */
 /* responsive for small device */
@@ -401,6 +428,9 @@ address p {
     padding: 10px 20px;
     flex-direction: column;
   }
+  .copyright {
+    flex-direction: column;
+}
 }
 @media (max-width: 376px) {
   .banner_text h1 {
@@ -424,4 +454,5 @@ address p {
   .about {
     gap: 7px;
   }
+  
 }
