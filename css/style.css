@@ -264,6 +264,55 @@ nav li a {
   margin-top: 16px;
 }
 /* testimonial css end */
+/* footer css start */
+#help{
+  margin-top: 100px;
+  border-top: 2px solid rgb(201 184 225);
+}
+.footer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 30px;
+}
+address {
+  color: rgba(33, 35, 83, 1);
+  margin: 50px 0px;
+}
+address p {
+  margin: 20px 0px;
+  font-size: 15px;
+}
+.col h5{
+  padding-bottom: 20px;
+  color: rgba(33, 35, 83, 1);
+  font-weight: 400;
+  font-size: 16px;
+}
+.col-title{
+  margin-bottom: 30px;
+  font-weight: 600 !important;
+}
+.icon{
+  display:flex;
+}
+.icon i {
+  background: #cbc6c6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* footer css end */
 /* responsive for small device */
 @media (max-width: 940px) {
   .btn-nav {
