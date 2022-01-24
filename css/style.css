@@ -54,7 +54,10 @@ nav li a {
   display: flex;
   align-items: center;
 }
-.btn-nav,
+.btn-nav span {
+  color: #9c69e2;
+  margin-left: 5px;
+}
 .btn-trail span {
   color: #9c69e2;
   margin-left: 5px;
