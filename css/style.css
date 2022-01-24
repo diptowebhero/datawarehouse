@@ -7,7 +7,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -44,13 +44,20 @@ nav li a {
 .btn-nav {
   border: none;
   outline: none;
-  padding: 12px 30px;
+  padding: 12px 25px;
   border-radius: 50px;
   background-color: #fff;
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.btn-nav,
+.btn-trail span {
+  color: #9c69e2;
+  margin-left: 5px;
 }
 /* toggle items */
 #toggle-menu {
@@ -169,18 +176,26 @@ nav li a {
   justify-content: center;
   background: url(../images/features/features-bg1.png);
   background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 .card-2 {
   background: url(../images/features/features-bg2.png);
   background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 .card-3 {
   background: url(../images/features/features-bg3.png);
   background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 .card-4 {
   background: url(../images/features/features-bg4.png);
   background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 .card-image {
   max-width: 232px;
@@ -209,6 +224,11 @@ nav li a {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.btn-feature span {
+  margin-left: 10px;
 }
 /* feature css end */
 /* testimonial css start */
@@ -361,6 +381,25 @@ address p {
   color: rgba(75, 93, 104, 1);
   font-size: 16px;
 }
+.free_trail_btn {
+  display: flex;
+  align-items: center;
+}
+.btn-trail {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
 /* footer css end */
 /* responsive for small device */
 @media (max-width: 940px) {
@@ -460,6 +499,19 @@ address p {
   .free_trail h3 {
     font-size: 32px;
   }
+  .btn-trail {
+    padding: 15px 20px;
+  }
+  .btn-trail span {
+    display: none;
+  }
+  .free_trail {
+    text-align: center;
+  }
+  .btn-feature {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media (max-width: 376px) {
   .banner_text h1 {
@@ -488,5 +540,12 @@ address p {
   }
   .card-image img {
     height: 100%;
+  }
+  .free_trail_btn {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .btn-trail {
+    margin-top: 10px;
   }
 }
